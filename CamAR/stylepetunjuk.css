@@ -1,0 +1,92 @@
+/* Reset */
+body {
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background: linear-gradient(135deg, #000000, #010123, #101023);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Header */
+.header {
+    width: 100%;
+    text-align: left;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.back-button {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 8px 15px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.back-button:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+/* Content */
+.content {
+    max-width: 600px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Section Guide */
+.guide-section {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 15px;
+    border-radius: 10px;
+    margin: 10px 0;
+    transition: 0.3s;
+}
+
+.guide-section:hover {
+    background: rgba(255, 255, 255, 0.25);
+}
+
+/* Icon */
+.guide-section img {
+    width: 50px;
+    height: 50px;
+}
+
+/* Text */
+.item-content {
+    text-align: left;
+}
+
+.item-content h2 {
+    font-size: 18px;
+    margin: 0;
+}
+
+.item-content p {
+    font-size: 14px;
+    margin: 5px 0 0;
+    color: #e0e0e0;
+}
+
+/* Catatan */
+.note {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #ccc;
+}

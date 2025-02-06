@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background: linear-gradient(135deg, #000000, #010123, #101023);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.dashboard-container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    width: 50%;
+    max-width: 500px;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+/* Grid Button */
+.button-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+/* Tombol Dashboard */
+.button {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid white;
+    /* Warna border putih */
+    border-radius: 8px;
+    /* Sudut tombol melengkung */
+    /* Susunan vertikal */
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: 0.3s;
+    padding: 10px;
+}
+
+/* Ikon dalam tombol */
+.button img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 5px;
+}
+
+.button span {
+    display: block;
+    /* Agar teks selalu tampil di bawah */
+    margin-top: 5px;
+}
+
+.button:hover {
+    border: 3px solid #1c60f5;
+    background: rgba(255, 255, 255, 0.4);
+    transform: scale(1.05);
+}
+
+.background-animation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.circle {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    animation: move 20s infinite ease-in-out;
+}
+
+.circle:nth-child(1) {
+    width: 200px;
+    height: 200px;
+    top: -50px;
+    left: -50px;
+    animation-duration: 25s;
+}
+
+.circle:nth-child(2) {
+    width: 150px;
+    height: 150px;
+    bottom: -30px;
+    right: -30px;
+    animation-duration: 30s;
+}
+
+.circle:nth-child(3) {
+    width: 100px;
+    height: 100px;
+    top: 20%;
+    left: 40%;
+    animation-duration: 22s;
+}
+
+.logos {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.logos img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes move {
+
+    0%,
+    100% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(20px, -20px);
+    }
+}
